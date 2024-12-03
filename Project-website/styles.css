@@ -1,9 +1,10 @@
-h3 {
+#name-luxo {
     font-family:Arial, sans-serif;
     font-style: italic;
     color: rgb(0, 197, 241);
     margin: 4px;
     font-weight: 400;
+    display: inline-block;
 }
 
 #name-Aluguel {
@@ -12,12 +13,14 @@ h3 {
     font-style: italic;
     font-size: large;
     font-weight: 450;
+    display: inline-block;
 }
 
 #barcologo {
     width: 45px; 
     height: 50px;
     margin-right: 10px;
+    display: inline-block;
 }
 
 header {
@@ -27,6 +30,12 @@ header {
     background-color: #21272B;
     padding: 20px 20px;
     color: white;
+    width: 980px;
+}
+
+#barco-central {
+    display: inline-block;
+    width: 1020px;
 }
 
 .logo {
@@ -55,6 +64,7 @@ nav a {
     text-decoration: none;
     margin-left: 30px;
     margin-right: 30px;
+    display: inline-block;
 }
 
 
@@ -73,13 +83,164 @@ a:hover {
     object-fit: cover;
 }
 
-.hero-text {
+.contato-box-geral {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 57%;
+    transform: translate(-10%, -20%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    display: inline-block;
 }
+
+#telefone {
+  color: rgb(198, 176, 127); 
+  font-size: 20px;
+}
+
+.contato-conteudo2 {
+  display: inline-block; 
+  margin-left: 10px;
+}
+
+.contato-conteudo3 {
+  display: inline-block;
+  margin-left: 10px; 
+  margin-bottom: 10px;
+}
+
+#contato-texto {
+  width: 300px;
+  color: white; 
+  font-family: Calibri; 
+  font-weight: lighter; 
+  font-style: italic; 
+  font-size: 18px; 
+
+}
+
+#barco2 {
+    width: 120%;
+    height: 50%;
+    margin-right: 10%;
+    float: left;
+}
+
+#contato-destaque {
+  margin-bottom: 0%; 
+  width: 350px; 
+  color: white; 
+  font-family: Calibri; 
+  font-weight: lighter; 
+  font-style: italic; 
+  font-size: 28px; 
+}
+
+.menu-inicial {
+    display: inline-block;
+}
+.inicial {
+    display: flex;
+    align-items: center;
+}
+#telefone2 {
+    font-family:Arial;
+    font-weight: 1;
+    font-style: italic;
+    max-width: 70%;
+}
+
+.retangulo-destino {
+    width: 458px; /* Largura do retângulo */
+    height: 40px; /* Altura do retângulo */
+    background-color: rgb(17, 194, 243); /* Cor sólida (azul neste caso) */
+    color: white; /* Cor do texto */
+    display: flex; /* Para centralizar o conteúdo dentro do retângulo */
+    justify-content: ; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    border-radius: 0px; /* (Opcional) Bordas levemente arredondadas */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 18px;
+    margin-left: 25px;
+  }
+
+  #name-destino {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 1;
+    margin-left: 5px;
+  }
+
+  #simbolodestino {
+    margin-left: 3px;
+  }
+  
+  .Texto-destino {
+    margin-left: 25px;
+    width: 400px;
+  }
+
+  .retangulo-frota {
+    width: 458px; /* Largura do retângulo */
+    height: 40px; /* Altura do retângulo */
+    background-color: rgb(214, 196, 104); /* Cor sólida (azul neste caso) */
+    color: white; /* Cor do texto */
+    display: flex; /* Para centralizar o conteúdo dentro do retângulo */
+    justify-content: ; /* Alinha o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    border-radius: 0px; /* (Opcional) Bordas levemente arredondadas */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 18px;
+    margin-left: 25px;
+  }
+
+  .texto-nossafrota {
+    margin-left: 25px;
+    width: 400px;
+  }
+
+  .imagens-nossafrota {
+    width: 500px;
+    margin-left: 25px;
+    margin-top:;
+  }
+
+  #simbolofrota {
+    margin-left: 5px;
+  }
+
+  #name-frota {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 1;
+    margin-left: 5px;
+  }
+
+  #img1 {
+    margin-bottom: 11px;
+    margin-right: 11px;
+  }
+
+  #img2 {
+    margin-bottom: 11px;
+  }
+
+  #img3 {
+    margin-right: 11px;
+  }
+
+  .imgtitulo {
+    margin-left: 20px; 
+    margin-top: 15px; 
+    width: 35px;
+    display: inline-block;
+}
+
+.nossafrota-completa {
+  position: relative;
+  margin-left: 485px;
+  margin-top: -445px;
+}
+
 
