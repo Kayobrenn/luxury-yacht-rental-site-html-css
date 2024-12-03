@@ -157,7 +157,7 @@ a:hover {
     background-color: rgb(17, 194, 243); /* Cor sólida (azul neste caso) */
     color: white; /* Cor do texto */
     display: flex; /* Para centralizar o conteúdo dentro do retângulo */
-    justify-content: ; /* Alinha o conteúdo horizontalmente */
+    /*justify-content:; Alinha o conteúdo horizontalmente */
     align-items: center; /* Alinha o conteúdo verticalmente */
     border-radius: 0px; /* (Opcional) Bordas levemente arredondadas */
     text-align: center; /* Centraliza o texto */
@@ -187,7 +187,7 @@ a:hover {
     background-color: rgb(214, 196, 104); /* Cor sólida (azul neste caso) */
     color: white; /* Cor do texto */
     display: flex; /* Para centralizar o conteúdo dentro do retângulo */
-    justify-content: ; /* Alinha o conteúdo horizontalmente */
+    /*justify-content: ; Alinha o conteúdo horizontalmente */
     align-items: center; /* Alinha o conteúdo verticalmente */
     border-radius: 0px; /* (Opcional) Bordas levemente arredondadas */
     text-align: center; /* Centraliza o texto */
