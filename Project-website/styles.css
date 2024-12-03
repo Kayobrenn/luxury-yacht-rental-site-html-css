@@ -52,12 +52,12 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    align-items: flex-end; /* Alinha os links na parte inferior do nav */
-    height: 50px; /* Ajuste conforme necessário */
+    align-items: flex-end;
+    height: 50px; 
 }
 
 nav a {
-    margin-top: 10px; /* Adiciona um espaço extra acima dos links */
+    margin-top: 10px;
     color: white;
     font-family: Arial, sans-serif;
     font-size: x-small;
@@ -203,7 +203,6 @@ a:hover {
   .imagens-nossafrota {
     width: 500px;
     margin-left: 25px;
-    margin-top:;
   }
 
   #simbolofrota {
