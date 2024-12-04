@@ -30,12 +30,12 @@ header {
     background-color: #21272B;
     padding: 20px 20px;
     color: white;
-    width: 980px;
+    width: 955px;
 }
 
 #barco-central {
     display: inline-block;
-    width: 1020px;
+    width: 995px;
 }
 
 .logo {
@@ -85,7 +85,7 @@ a:hover {
 
 .contato-box-geral {
     position: absolute;
-    top: 40%;
+    top: 48%;
     left: 57%;
     transform: translate(-10%, -20%);
     color: white;
@@ -242,4 +242,76 @@ a:hover {
   margin-top: -445px;
 }
 
+footer {
+  text-align: left;
+  background-color: #e6e6e6;
+  padding: 10px 20px;
+  color: #555;
+  font-size: 0.9rem;
+  bottom: 0;
+  left: 0;
+  width: 958px;
+  margin-top: 40px;
+}
 
+.site-completo {
+  margin-left: 18%;
+}
+
+.external-box1 {
+  margin-left: 35px;
+  margin-right: 20px;
+  background-color: white;
+  margin-top: 0px;
+}
+
+.external-box2 {
+  top: -8px;
+  right: 0px;
+  left: 184px;
+  height: 1100px;
+  width: 46px;
+  position: absolute;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  
+}
+
+.external-box3 {
+  top: 1080px;
+  right: 0px;
+  left: 184px;
+  height: 66px;
+  width: 46px;
+  position: absolute;
+  background-color: #c0c0c0;
+  display: flex;
+  margin-top: 10px;
+
+}
+
+.external-box4 {
+  top: -8px;
+  right: 0px;
+  left: 98%;
+  height: 1100px;
+  width: 22px;
+  position: absolute;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  
+}
+
+.external-box5 {
+  top: 1080px;
+  right: 10px;
+  left: 98%;
+  height: 66px;
+  width: 22px;
+  position: absolute;
+  background-color: #C0C0C0;
+  display: flex;
+  margin-top: 10px;
+
+
+}

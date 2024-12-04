@@ -12,7 +12,7 @@
     height: 1090px;
     width: 46px;
     position: absolute;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 0, 0);
     display: flex;
     
 }
@@ -24,7 +24,7 @@
     height: 60px;
     width: 46px;
     position: absolute;
-    background-color: #C0C0C0;
+    background-color: #ff0000;
     display: flex;
   
 }
