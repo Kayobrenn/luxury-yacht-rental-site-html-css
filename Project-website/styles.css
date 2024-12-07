@@ -85,13 +85,13 @@ a:hover {
 
 .contato-box-geral {
     position: absolute;
-    top: 48%;
-    left: 57%;
+    top: 320px;
+    left: 600px;
     transform: translate(-10%, -20%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    display: inline-block;
+    display: flex;
 }
 
 #telefone {
@@ -239,7 +239,7 @@ a:hover {
 .nossafrota-completa {
   position: relative;
   margin-left: 485px;
-  margin-top: -445px;
+  margin-top: -451px;
 }
 
 footer {
@@ -251,36 +251,35 @@ footer {
   bottom: 0;
   left: 0;
   width: 958px;
-  margin-top: 40px;
+  margin-top: 46px;
 }
 
 .site-completo {
-  margin-left: 18%;
+  margin-left: 38px;
 }
 
 .external-box1 {
   margin-left: 35px;
   margin-right: 20px;
-  background-color: white;
+  background-color: rgb(9, 161, 175);
   margin-top: 0px;
 }
 
 .external-box2 {
-  top: -8px;
+  top: 8px;
   right: 0px;
-  left: 184px;
+  left: 0px;
   height: 1100px;
   width: 46px;
   position: absolute;
   background-color: rgb(235, 235, 235);
-  display: flex;
   
 }
 
 .external-box3 {
-  top: 1080px;
+  top: 1094px;
   right: 0px;
-  left: 184px;
+  left: 0px;
   height: 66px;
   width: 46px;
   position: absolute;
@@ -291,9 +290,9 @@ footer {
 }
 
 .external-box4 {
-  top: -8px;
+  top: 8px;
   right: 0px;
-  left: 98%;
+  left: 1041px;
   height: 1100px;
   width: 22px;
   position: absolute;
@@ -305,13 +304,13 @@ footer {
 .external-box5 {
   top: 1080px;
   right: 10px;
-  left: 98%;
+  left: 1041px;
   height: 66px;
   width: 22px;
   position: absolute;
   background-color: #C0C0C0;
   display: flex;
-  margin-top: 10px;
+  margin-top: 24px;
 
 
 }
