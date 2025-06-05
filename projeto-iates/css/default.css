@@ -444,3 +444,19 @@ footer p {
     background-color: #139ac4;
 }
 
+.button2 {
+    width: 20%;
+    padding: 12px;
+    background-color: var(--lightblue);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button2:hover {
+    background-color: #139ac4;
+}
