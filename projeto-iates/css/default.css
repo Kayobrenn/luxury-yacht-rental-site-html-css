@@ -369,3 +369,85 @@ footer p {
     margin: 0 auto;
     text-indent: 15px;
 }
+
+/* Página de Login */
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--darkblue);
+}
+
+.login-box {
+    background-color: var(--box);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* Inputs */
+.entry {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.entry label {
+    color: var(--ocher);
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.entry input {
+    padding: 10px;
+    border: 1px solid var(--footer);
+    border-radius: 8px;
+    outline: none;
+    background-color: white;
+    font-family: var(--pagefont);
+    transition: border 0.3s ease;
+}
+
+.entry input:focus {
+    border: 1px solid var(--lightblue);
+}
+
+/* Botões */
+.button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--lightblue);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #139ac4;
+}
+
+/* Footer ajustado */
+footer {
+    background-color: var(--footer);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.85em;
+}
