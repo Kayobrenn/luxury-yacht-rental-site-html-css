@@ -1,8 +1,8 @@
-/* font */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-/* var */
+
 
 :root {
     --background: #EBEBEB;
@@ -14,7 +14,7 @@
     --pagefont: 'Open Sans', sans-serif;
 }
 
-/* all */
+
 
 * {
     margin: 0;
@@ -32,7 +32,7 @@ body {
     width: 980px;
 }
 
-/* header */
+
 
 header {
     background-color: var(--darkblue);
@@ -77,7 +77,7 @@ header {
     flex-direction: column;
 }
 
-/* menu */
+
 
 .navmenu {
     margin-top: 62px;
@@ -87,7 +87,7 @@ header {
 
 .navmenu li {
     padding: 0 27px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 300;
     border-left: 0.5px solid white;
 }
@@ -107,7 +107,7 @@ header {
     color: var(--lightblue);
 }
 
-/* main */
+
 
 main {
     background-color: white;
@@ -129,7 +129,7 @@ main {
     bottom: 220px;
 }
 
-/* principal */
+
 
 #principal {
     font-style: italic;
@@ -172,7 +172,7 @@ main {
     font-size: 1.2em;
 }
 
-/* topics */
+
 
 .topics {
     display: grid;
@@ -230,7 +230,7 @@ main {
     column-gap: 5px;
 }
 
-/* aluguel */
+
 
 .aluguel {
     max-width: 930px;
@@ -258,7 +258,7 @@ main {
     font: italic 400 1.2em var(--pagefont);
 }
 
-/* destinos */
+
 
 .destination {
     max-width: 900px;
@@ -287,7 +287,7 @@ main {
     font: italic 400 1.2em var(--pagefont);
 }
 
-/* tripulação */
+
 
 .trip {
     margin: 0 50px;
@@ -296,7 +296,7 @@ main {
     line-height: 1.5em;
 }
 
-/* contato */
+
 
 form {
     padding: 0 10px 20px;
@@ -355,7 +355,7 @@ textarea {
     cursor: pointer;
 }
 
-/* footer */
+
 
 footer {
     font-size: 0.75em;
@@ -370,7 +370,7 @@ footer p {
     text-indent: 15px;
 }
 
-/* Página de Login */
+
 
 .login-page {
     display: flex;
@@ -397,7 +397,7 @@ footer p {
     font-style: italic;
 }
 
-/* Inputs */
+
 .entry {
     display: flex;
     flex-direction: column;
@@ -426,7 +426,7 @@ footer p {
     border: 1px solid var(--lightblue);
 }
 
-/* Botões */
+
 .button {
     width: 100%;
     padding: 12px;
@@ -444,10 +444,3 @@ footer p {
     background-color: #139ac4;
 }
 
-/* Footer ajustado */
-footer {
-    background-color: var(--footer);
-    padding: 15px 0;
-    text-align: center;
-    font-size: 0.85em;
-}
