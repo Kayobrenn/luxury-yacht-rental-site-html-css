@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensagens Recebidas</title>
+    <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/default.css" />
+    <style>
+        main {
+            padding: 2rem;
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .back-button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #005f8a;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Mensagens Recebidas</h1>
+
+        <table id="mensagens-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Mensagem</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+        <a class="back-button" href="index.html">Voltar para página inicial</a>
+    </main>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var mensagens = obterMensagens();
+
+            const tbody = $('#mensagens-table tbody');
+
+            if (mensagens.length === 0) {
+                const row = $('<tr>');
+                const cell = $('<td>').attr('colspan', 3).text('Nenhuma mensagem enviada ainda.');
+                row.append(cell);
+                tbody.append(row);
+            } else {
+                mensagens.forEach(function (msg) {
+                    const row = $('<tr>');
+                    row.append($('<td>').text(msg.nome));
+                    row.append($('<td>').text(msg.email));
+                    row.append($('<td>').text(msg.mensagem));
+                    tbody.append(row);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

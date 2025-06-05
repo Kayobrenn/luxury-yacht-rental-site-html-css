@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área Administrativa</title>
+    <link rel="stylesheet" href="css/default.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>Área Administrativa</h1>
+        </header>
+
+        <main>
+            <form>
+                <div class="entry">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" />
+                </div>
+
+                <div class="entry">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" />
+                </div>
+
+                <div class="buttons">
+                    <button type="submit" class="button" id="btnEntrar">Entrar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2023 por Luxo aluguel de iates</p>
+    </footer>
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#btnEntrar').click(function (e) {
+                e.preventDefault();
+
+                var email = $('#email').val();
+                var senha = $('#senha').val();
+
+                var objLoginSenha = {
+                    email: email,
+                    senha: senha
+                };
+
+                var resultado = validarUsuario(objLoginSenha);
+
+                if (resultado === true) {
+                    window.location.href = "mensagens.html";
+                } else {
+                    alert("E-mail e Senha inválidos");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mensagens Recebidas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0077b6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mensagens Recebidas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Mensagem</th>
+            </tr>
+        </thead>
+        <tbody id="mensagens-body">
+
+        </tbody>
+    </table>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/api.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            var mensagens = obterMensagens();
+
+            const tbody = $('#mensagens-body');
+
+            if (mensagens.length === 0) {
+                tbody.append('<tr><td colspan="3">Nenhuma mensagem enviada ainda.</td></tr>');
+            } else {
+                mensagens.forEach(function (msg) {
+                    const tr = $('<tr>');
+                    tr.append($('<td>').text(msg.nome));
+                    tr.append($('<td>').text(msg.email));
+                    tr.append($('<td>').text(msg.mensagem));
+                    tbody.append(tr);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
