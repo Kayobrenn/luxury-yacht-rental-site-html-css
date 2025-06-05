@@ -7,48 +7,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mensagens Recebidas</title>
     <link rel="shortcut icon" href="images/barco2.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/default.css" />
     <style>
-        main {
-            padding: 2rem;
-            font-family: sans-serif;
+        :root {
+            --darkblue: #0a2342;
+            --lightblue: #139ac4;
+            --ocher: #d99929;
+            --box: #143d59;
+            --footer: #0c2d48;
+            --pagefont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
+        /* Reset e corpo */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background: var(--darkblue);
+            font-family: var(--pagefont);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Container principal */
+        main {
+            background-color: var(--box);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+            width: 100%;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            height: 80vh; /* Altura fixa para o main */
+        }
+
+        /* Título principal */
+        h1 {
+            text-align: center;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: var(--lightblue);
+            flex: 0 0 auto;
+        }
+
+        /* Container da tabela com scroll */
+        .table-container {
+            flex: 1 1 auto; /* Preenche o espaço restante */
+            overflow-y: auto; /* Barra de rolagem vertical */
+            margin-top: 10px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            background-color: white;
+        }
+
+        /* Tabela */
         table {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
+            border-collapse: separate;
+            border-spacing: 0 10px;
+            color: #0a2342;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        thead tr {
+            background-color: var(--lightblue);
+            color: white;
+            display: table;
+            width: 100%;
+            table-layout: fixed; /* Mantém alinhamento */
+        }
+
+        tbody {
+            display: block;
+            max-height: 60vh; /* Altura máxima para tbody com scroll */
+            overflow-y: auto;
+            width: 100%;
+        }
+
+        tbody tr {
+            background-color: #f9f9f9;
+            display: table;
+            width: 100%;
+            table-layout: fixed; /* Mesma largura das colunas do thead */
+            transition: background-color 0.3s ease;
+        }
+
+        tbody tr:hover {
+            background-color: #d0eaff;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e6f2ff;
         }
 
         th,
         td {
-            border: 1px solid #ccc;
-            padding: 10px;
+            padding: 12px 15px;
             text-align: left;
+            font-weight: 600;
+            font-size: 1em;
+            word-wrap: break-word;
         }
 
-        th {
-            background-color: #0077b6;
-            color: white;
+        /* Mensagem "Nenhuma mensagem" */
+        tbody td[colspan="3"] {
+            text-align: center;
+            font-style: italic;
+            color: var(--ocher);
+            padding: 20px 0;
         }
 
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
+        /* Botão voltar */
         .back-button {
-            margin-top: 1rem;
-            padding: 0.5rem 1rem;
-            background-color: #0077b6;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: var(--lightblue);
             color: white;
             border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
             text-decoration: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 200px;
+            align-self: center;
+            transition: background-color 0.3s ease;
+            flex: 0 0 auto;
         }
 
         .back-button:hover {
-            background-color: #005f8a;
+            background-color: #0f7dbb;
         }
     </style>
 </head>
@@ -57,18 +153,20 @@
     <main>
         <h1>Mensagens Recebidas</h1>
 
-        <table id="mensagens-table">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>E-mail</th>
-                    <th>Mensagem</th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
+        <div class="table-container">
+            <table id="mensagens-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Conteúdo dinâmico via JS -->
+                </tbody>
+            </table>
+        </div>
 
         <a class="back-button" href="index.html">Voltar para página inicial</a>
     </main>
